@@ -6,7 +6,7 @@ $("#results-table").hide();
 $("#error").hide();
 
 // global
-var url = 'http://static.pyimagesearch.com.s3-us-west-2.amazonaws.com/vacation-photos/dataset/';
+var url = 'http://127.0.0.1:5000/uploads/'
 var data ="";
 
 $(function() {
