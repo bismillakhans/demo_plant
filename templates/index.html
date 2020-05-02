@@ -2,20 +2,18 @@
 
 {% block content %}
 
+<div class="row">
 
-
-
-        <div class="col-lg-12">
+  <div class="col-md-7">
     <h2>Select an Image</h2>
-<hr>
     <br>
     <div class="row">
       <div class="col-md-6">
-        {% for image_name in image_names %}
+          {% for image_name in image_names %}
         <p><img src="{{url_for('send_image', filename=image_name)}}" style="height: 250px;" class="img"></p>
         {% endfor %}
-       
       </div>
+     
     </div>
   </div>
 
@@ -27,8 +25,8 @@
     <table class="table" id="results-table">
       <thead>
         <tr>
-          
-          <th>Category</th>
+          <th>Image</th>
+          <th>Score</th>
         </tr>
       </thead>
       <tbody id="results">
